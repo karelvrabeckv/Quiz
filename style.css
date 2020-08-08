@@ -1,0 +1,109 @@
+/************************************/
+/* Pravá horní část
+/************************************/
+
+/* otázky a odpovědi dohromady */
+#question
+{
+	position: absolute;
+	display: none;
+	top: 20px;
+	right: 20px;
+	padding: 5px;
+	background: #F2F2F2;
+	outline: 3px solid black;
+}
+
+/* otázky a odpovědi jednotlivě */
+span#q_text, input#one, input#two, input#three
+{
+	display: block;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+/* otázka */
+span#q_text
+{
+	margin: 0;
+}
+
+/************************************/
+/* Levá horní & Pravá spodní část
+/************************************/
+
+/* obrázky */
+img#start, img#man, img#target
+{
+	position: absolute;
+}
+
+/* obrázek startu */	
+img#start
+{
+	top: 20px;
+	left: 20px;
+	width: 270px;
+	height: 196px;
+}
+
+/* obrázek panáčka */
+img#man
+{
+	display: none;
+	top: 70px;
+	left: 165px;
+	width: 110px;
+	height: 222px;	
+}
+
+/* obrázek cíle */
+img#target
+{
+	bottom: 20px;
+	right: 20px;
+	width: 230px;
+	height: 232px;
+}
+
+/************************************/
+/* Levá spodní část
+/************************************/
+
+/* skóre dohromady */
+#score
+{
+	position: absolute;
+	display: none;
+	bottom: 100px;
+	left: 20px;	
+	font-size: 25px;
+}
+
+/* skóre jednotlivě */
+span#s_text, span#good, span#bad
+{
+	font-weight: bold;
+}
+
+/* správné odpovědi */
+span#good
+{
+	color: green;
+}
+
+/* špatné odpovědi */
+span#bad
+{
+	color: red;
+}
+
+/* startovací tlačítko */
+input#new
+{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	padding: 15px;
+	font-size: 25px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='cs'>
+ <head>
+
+  <!-- Obecné -->
+  <title>Hra</title>
+  <meta charset='UTF-8'>
+ 
+  <!-- Knihovny -->
+  <script src='libraries/jquery-3.3.1.min.js'></script>
+ 
+  <!-- JavaScript -->
+  <script src='scripts/engine.js'></script>
+  <script src='scripts/questions.js'></script>
+ 
+  <!-- Kaskádové styly -->
+  <link rel='stylesheet' href='style.css'>
+ 
+ </head>
+ <body>
+
+  <!-- Pravá horní část -->
+  <div id='question'>
+   <span id='q_text'></span>
+   <input id='one'   type='button' onClick='check(1);' value='...'>
+   <input id='two'   type='button' onClick='check(2);' value='...'>
+   <input id='three' type='button' onClick='check(3);' value='...'>
+  </div>
+
+  <!-- Levá horní & Pravá spodní část -->
+  <img id='start'  src='images/Start.png'  alt='Start' />
+  <img id='man'    src='images/Good.png'   alt='Man' />
+  <img id='target' src='images/Target.png' alt='Target' />
+ 
+  <!-- Levá spodní část -->
+  <div id='score'>
+   <span>Skóre: </span><span id='s_text'>0</span><span>/<script>document.write(NUM_OF_STEPS);</script></span><br />
+   <span>Správných: </span><span id='good'>0</span><br />
+   <span>Špatných: </span><span id='bad'>0</span>
+  </div>
+  <input id='new' type='button' onClick='start();' value='NOVÁ HRA'>
+
+ </body>
+</html>
